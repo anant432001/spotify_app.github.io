@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+body {
+    background-color: rgb(124, 124, 124);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    font-family: 'Ubuntu', 'sans-serif';
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0 12px;
+    font-size: 10px;
+}
+
+.brand img {
+    height: 45px;
+    width: 45px;
+    padding: 9px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.container {
+    min-height: 66.1vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', 'sans-serif';
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('./utils/bg.jpg');
+    background-size: contain;
+}
+
+.bottom {
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+.songItemContainer {
+    margin-top: 68px;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img {
+    height: 45px;
+    width: 40px;
+    margin: 0 23px;
+    border-radius: 5px;
+    
+}
+
+.timestamp {
+    margin: 0 23px;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 147px;
+    margin-top: 19px;
+    font-family: 'Varela Round', 'sans-serif';
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
